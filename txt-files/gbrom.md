@@ -1,14 +1,14 @@
-Gameboy ROM Header Info :: SephirothBCH :: v1.01 :: 2000/11/28
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\  After the release of this document, I am temporarily   \\\
-\\\  leaving the coding and emulation scene.  The last few  \\\
-\\\  weeks of my life have been especially rough, mainly    \\\
-\\\  brought on by the death of my uncle, Roy Colbert.      \\\
-\\\  I would like to dedicate this doc, as well as any      \\\
-\\\  other progs I make to his memory.                      \\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
+Name                    | Author       | Version | Date
+------------------------|--------------|---------|-----------
+Gameboy ROM Header Info | SephirothBCH | v1.01   | 2000/11/28
+______________
+After the release of this document, I am temporarily
+leaving the coding and emulation scene.  The last few
+weeks of my life have been especially rough, mainly
+brought on by the death of my uncle, Roy Colbert.
+I would like to dedicate this doc, as well as any
+other progs I make to his memory.
+______________
 History:
 _______________
 v1.01 - Added some new licensees, fixed some
@@ -35,15 +35,33 @@ quasi-number value.  For example 30h and 31h translate into 01.  31h and 32h
 become 12, and so on.  There are some companies also present in the licensee
 section, later in this document.  Known combos are as follows, in the trans-
 lated form above.
-00- none                     01- nintendo           08- capcom
-13- electronic arts          18- hudsonsoft         19- b-ai
-20- kss                      22- pow                24- pcm complete
-25- san-x                    28- kemco japan        29- seta
-30- viacom                   31- nintendo           32- bandia
-33- ocean/acclaim            34- konami             35- hector
-37- taito                    38- hudson             39- banpresto
-41- ubi soft                 42- atlus              44- malibu
-46- angel                    47- pullet-proof       49- irem
+00- none
+01- nintendo
+08- capcom
+13- electronic arts
+18- hudsonsoft
+19- b-ai
+20- kss                      
+22- pow               
+24- pcm complete
+25- san-x                    
+28- kemco japan        
+29- seta
+30- viacom                   
+31- nintendo           
+32- bandia
+33- ocean/acclaim            
+34- konami             
+35- hector
+37- taito                   
+38- hudson             
+39- banpresto
+41- ubi soft                 
+42- atlus              
+44- malibu
+46- angel                    
+47- pullet-proof       
+49- irem
 50- absolute                 51- acclaim            52- activision
 53- american sammy           54- konami             55- hi tech entertainment
 56- ljn                      57- matchbox           58- mattel
@@ -100,58 +118,160 @@ Once again, this is only one byte long.  Valid HEX values are 00- Japan and
 Licensee
 ========
 One byte long, this makes up the bulk of the entire document.  Some of the
-names are truncated (*), because they are too long for NO$GMB to display.  
+names are truncated (.), because they are too long for NO$GMB to display.  
 Anyone who has the full names of the truncated licensees please email me, and 
 you will get credit for them.  Here are all of the valid HEX values I found:
-00- none               01- nintendo           08- capcom
-09- hot-b              0A- jaleco             0B- coconuts
-0C- elite systems      13- electronic arts    18- hudsonsoft
-19- itc entertainment  1A- yanoman            1D- clary
-1F- virgin             24- pcm complete       25- san-x
-28- kotobuki systems   29- seta               30- infogrames
-31- nintendo           32- bandai             33- "see above"
-34- konami             35- hector             38- capcom
-39- banpresto          3C- *entertainment i   3E- gremlin
-41- ubi soft           42- atlus              44- malibu
-46- angel              47- spectrum holoby    49- irem
-4A- virgin             4D- malibu             4F- u.s. gold
-50- absolute           51- acclaim            52- activision
-53- american sammy     54- gametek            55- park place
-56- ljn                57- matchbox           59- milton bradley
-5A- mindscape          5B- romstar            5C- naxat soft
-5D- tradewest          60- titus              61- virgin
-67- ocean              69- electronic arts    6E- elite systems
-6F- electro brain      70- infogrames         71- interplay
-72- broderbund         73- sculptered soft    75- the sales curve
-78- t*hq               79- accolade           7A- triffix entertainment
-7C- microprose         7F- kemco              80- misawa entertainment
-83- lozc               86- *tokuma shoten i   8B- bullet-proof software
-8C- vic tokai          8E- ape                8F- i'max
-91- chun soft          92- video system       93- tsuburava
-95- varie              96- yonezawa/s'pal     97- kaneko
-99- arc                9A- nihon bussan       9B- tecmo
-9C- imagineer          9D- banpresto          9F- nova
-A1- hori electric      A2- bandai             A4- konami
-A6- kawada             A7- takara             A9- technos japan
-AA- broderbund         AC- toei animation     AD- toho
-AF- namco              B0- acclaim            B1- ascii or nexoft
-B2- bandai             B4- enix               B6- hal
-B7- snk                B9- pony canyon        BA- *culture brain o
-BB- sunsoft            BD- sony imagesoft     BF- sammy
-C0- taito              C2- kemco              C3- squaresoft
-C4- *tokuma shoten i   C5- data east          C6- tonkin house
-C8- koei               C9- ufl                CA- ultra
-CB- vap                CC- use                CD- meldac
-CE- *pony canyon or    CF- angel              D0- taito
-D1- sofel              D2- quest              D3- sigma enterprises
-D4- ask kodansha       D6- naxat soft         D7- copya systems
-D9- banpresto          DA- tomy               DB- ljn
-DD- ncs                DE- human              DF- altron
-E0- jaleco             E1- towachiki          E2- uutaka
-E3- varie              E5- epoch              E7- athena
-E8- asmik              E9- natsume            EA- king records
-EB- atlus              EC- epic/sony records  EE- igs
-F0- a wave         F3- extreme entertainment  FF- ljn
+
+HEX   | Licensee
+------|------------
+00    | None               
+01    | Nintendo           
+08    | Capcom
+09    | Hot-B              
+0A    | Jaleco             
+0B    | Coconuts
+0C    | Elite Systems      
+13    | EA (Electronic Arts)    
+18    | Hudsonsoft
+19    | ITC Entertainment  
+1A    | Yanoman            
+1D    | Clary
+1F    | Virgin Interactive             
+24    | PCM Complete       
+25    | San-X
+28    | Kotobuki Systems   
+29    | Seta               
+30    | Infogrames
+31    | Nintendo           
+32    | Bandai             
+33    | "see above"
+34    | Konami             
+35    | Hector             
+38    | Capcom
+39    | Banpresto          
+3C    | .Entertainment i   
+3E    | Gremlin
+41    | Ubisoft           
+42    | Atlus              
+44    | Malibu
+46    | Angel              
+47    | Spectrum Holoby    
+49    | Irem
+4A    | Virgin Interactive            
+4D    | Malibu             
+4F    | US gold
+50    | Absolute           
+51    | Acclaim            
+52    | Activision
+53    | American Sammy     
+54    | Gametek           
+55    | Park Place
+56    | LJN                
+57    | Matchbox           
+59    | Milton Bradley
+5A    | Mindscape          
+5B    | Romstar            
+5C    | Naxat Soft
+5D    | Tradewest          
+60    | Titus              
+61    | Virgin Interactive
+67    | Ocean Interactive              
+69    | EA (Electronic Arts)    
+6E    | Elite Systems
+6F    | Electro Brain      
+70    | Infogrames         
+71    | Interplay
+72    | Broderbund         
+73    | Sculptered Soft   
+75    | The Sales Curve
+78    | t.hq               
+79    | Accolade           
+7A    | Triffix Entertainment
+7C    | Microprose         
+7F    | Kemco              
+80    | Misawa Entertainment
+83    | Lozc               
+86    | .tokuma Shoten i   
+8B    | Bullet-Proof Software
+8C    | Vic Tokai          
+8E    | Ape                
+8F    | I'Max
+91    | Chun Soft          
+92    | Video System       
+93    | Tsuburava
+95    | Varie              
+96    | Yonezawa/S'Pal     
+97    | Kaneko
+99    | Arc                
+9A    | Nihon Bussan       
+9B    | Tecmo
+9C    | Imagineer          
+9D    | Banpresto          
+9F    | Nova
+A1    | Hori Electric      
+A2    | Bandai             
+A4    | Konami
+A6    | Kawada             
+A7    | Takara             
+A9    | Technos Japan
+AA    | Broderbund         
+AC    | Toei Animation    
+AD    | Toho
+AF    | Namco             
+B0    | acclaim           
+B1    | ASCII or Nexsoft
+B2    | Bandai             
+B4    | Square Enix               
+B6    | HAL
+B7    | SNK                
+B9    | Pony Canyon        
+BA    | .Culture Brain o
+BB    | Sunsoft            
+BD    | Sony Imagesoft    
+BF    | Sammy
+C0    | Taito             
+C2    | Kemco              
+C3    | Squaresoft
+C4    | .tokuma Shoten i   
+C5    | Data East          
+C6    | Tonkin House
+C8    | Koei               
+C9    | UFL                
+CA    | Ultra
+CB    | Vap                
+CC    | Use                
+CD    | Meldac
+CE    | .Pony Canyon or    
+CF    | Angel              
+D0    | Taito
+D1    | Sofel              
+D2    | Quest              
+D3    | Sigma Enterprises
+D4    | Ask Kodansha       
+D6    | Naxat Soft         
+D7    | Copya Systems
+D9    | Banpresto          
+DA    | Tomy               
+DB    | LJN
+DD    | NCS                
+DE    | Human              
+DF    | Altron
+E0    | Jaleco             
+E1    | Towachiki          
+E2    | Uutaka
+E3    | Varie              
+E5    | Epcoh              
+E7    | Athena
+E8    | Asmik              
+E9    | Natsume            
+EA    | King Records
+EB    | Atlus              
+EC    | Epic/Sony Records  
+EE    | IGS
+F0    | A Wave         
+F3    | Extreme Entertainment  
+FF    | LJN
+
 
 Header Check
 ============
